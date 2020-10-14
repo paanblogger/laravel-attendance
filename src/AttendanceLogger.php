@@ -37,6 +37,12 @@ class AttendanceLogger
         return $this;
     }
 
+    public function metadata($metadata)
+    {
+        $this->attendance->metadata = $metadata;
+        return $this;
+    }
+
     public function save()
     {
         $this->attendance->save();
