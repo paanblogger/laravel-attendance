@@ -7,6 +7,6 @@ trait IsAttendanceable
 {
     public function attender(): MorphMany
     {
-        return $this->morphMany(\App\Models\Attendance::class, 'attendanceable');
+        return $this->morphMany(\Paanblogger\LaravelAttendance\Models\Attendance::class, 'attendanceable');
     }
 }
