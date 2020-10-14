@@ -37,6 +37,12 @@ class AttendanceLogger
         return $this;
     }
 
+    public function timestamp($timestamp)
+    {
+        $this->attendance->timestamp = $timestamp;
+        return $this;
+    }
+
     public function metadata($metadata)
     {
         $this->attendance->metadata = $metadata;
